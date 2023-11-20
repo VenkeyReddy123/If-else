@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <!-- <center> <h1>If statement</h1>
+         {% if a < b %}
+            <h1>A is greter</h1>
+        {% endif %}</center> -->
+         <!-- <center>
+            <h1>If-Else statement</h1>
+            {% if a > b %}
+                <h1>A is greter than B {{a}}>{{b}}</h1>
+            {% else %}
+                <h1>B is greter than A {{b}}>{{a}}</h1>
+            {% endif %}
+         </center> -->
+         <!-- <center>
+            <h1>IF-elif -Else staments</h1>
+            {% if a > b and a > c %}
+                <h1>a is greater than b and c {{a}}>{{b}}>{{c}}</h1>
+            {% elif b > c %}
+            <h1>b is greater than a and c {{b}}>{{a}}>{{c}}</h1>
+            {% else %}
+            <h1>c is greater than b and c {{c}}>{{a}}>{{b}}</h1>
+            {% endif %}
+         </center> -->
+        <center>
+    <h1>Nested IF else statemnts</h1>
+         {% if a > b %}
+           {% if a > c  %}
+           <h1>a is greater than b and c</h1>
+           {% else  %}
+           <h1>a is smaller than c {{a}}>{{b}}>{{c}}</h1>
+           {% endif %}
+        {% else %}
+           {% if b > c %}
+               <h1>b is greater than a and c {{a}}>{{b}}>{{c}}</h1>
+            {% else %}
+            <h1>b is smaller than c {{a}}>{{b}}>{{c}}</h1>
+           {% endif %}
+        {% endif %}
+    </center>
+
+</body>
+</html>
